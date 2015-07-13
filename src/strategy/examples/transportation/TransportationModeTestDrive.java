@@ -1,9 +1,9 @@
-package strategy;
+package strategy.examples.transportation;
 
 /**
  * Created by luisburgos on 12/07/15.
  */
-public class StrategyTestDrive {
+public class TransportationModeTestDrive {
 
     public static void main(String[] args) {
 
