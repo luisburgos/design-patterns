@@ -14,7 +14,7 @@ La siguiente es una lista de patrones de diseño con descripcipnes breves y con 
 
 Relativos al proceso de creación de un objeto.
 
-* Nothing yet.
+* [Factory](#factory)
 
 ### Patrones de Estructura (Structural Patterns)
 
@@ -61,3 +61,19 @@ En Java tenemos acceso a la clase Observer mediante [java.util.Observer](http://
 **Ejemplos:**
 
 * [Subasta](https://github.com/LuisBurgos/design-patterns/tree/master/src/observer/examples/auction)
+
+## <a name="factory">Factory</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Definir una interface para crear un objeto, dejando a las subclases decidir de que tipo de clase se realizará la instancia. Reducir el uso del operador *new*.
+
+Crear objetos en una clase usando un método factory es más flexible que crear un objeto directamente. Es posible conectar la generación de familias de clases que tienen comportamientos en común. Elimina la necesidad de estar haciendo binding (casting) hacia clases específicas dentro del código, ya que este solo se entiende con las clases abstractas.
+
+**Aplicación:** Usamos el patrón Factory...
+* Cuando una clase no puede anticipar que clase de objetos debe crear, esto se sabe durante el tiempo de ejecución.
+* Cuando un método regresa una de muchas posibles clases que comparten carecterísticas comunes a través de una superclase.
+* Para encapsular la creación de objetos.
+
+**Ejemplos:**
+
+* [Carros](https://github.com/LuisBurgos/design-patterns/tree/master/src/factory/examples/cars)
+* [Armas](https://github.com/LuisBurgos/design-patterns/tree/master/src/factory/examples/weapons) (No implementado)
