@@ -27,6 +27,7 @@ Composición de clases u objetos.
 Forma en que clases las u objetos interaccionan y distribuyen funcionalidades.
 
 * [Strategy](#strategy)
+* [Observer](#observer)
 
 ## <a name="strategy">Strategy</a> [&#8593;](#lista-de-patrones)
 
@@ -41,7 +42,22 @@ Forma en que clases las u objetos interaccionan y distribuyen funcionalidades.
 * Ocultar código complicado, o que no queremos revelar, del usuario.
 
 **Ejemplos:**
-
 * [Robot](https://github.com/LuisBurgos/design-patterns/tree/master/src/strategy/examples/robot)
-
 * [Modos de transportación](https://github.com/LuisBurgos/design-patterns/tree/master/src/strategy/examples/transportation)
+
+## <a name="observer">Observer</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Defina una dependencia de uno a muchos entre los objetos de manera que cuando un objeto cambia de estado, todos los que dependen de él son notificados y se actualizan automáticamente.
+
+Los *Observers* se registran con el *Subject*  a medida que se crean. Siempre que el Subject cambie, difundirá a todos los Observers registrados que ha cambiado, y cada Observer consulta al Subject que supervisa para obtener el cambio de estado que se haya generado.
+
+En Java tenemos acceso a la clase Observer mediante [java.util.Observer](http://docs.oracle.com/javase/8/docs/api/java/util/Observer.html)
+
+**Aplicación:** Usamos el patrón Observer cuando...
+* Un cambio en un objeto requiere cambiar los demás, pero no sabemos cuántos objetos hay que cambiar.
+* Configurar de manera dinámica un componente de la Vista, envés de estáticamente durante el tiempo de compilación.
+* Un objeto debe ser capaz de notificar a otros objetos sin que estos objetos estén fuertemente acoplados.
+
+**Ejemplos:**
+
+* [Subasta](https://github.com/LuisBurgos/design-patterns/tree/master/src/observer/examples/auction)
