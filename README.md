@@ -60,6 +60,8 @@ En Java tenemos acceso a la clase Observer mediante [java.util.Observer](http://
 
 **Ejemplos:**
 
+El ejemplo de Subasta presenta una variante distinta de muchas fuentes en Internet de este patrón, usaremos una clase *Evento* para controlar los sucesos a los que los *Observers* responderan.
+
 * [Subasta](https://github.com/LuisBurgos/design-patterns/tree/master/src/observer/examples/auction)
 
 ## <a name="factory">Factory</a> [&#8593;](#lista-de-patrones)
@@ -76,4 +78,4 @@ Crear objetos en una clase usando un método factory es más flexible que crear 
 **Ejemplos:**
 
 * [Carros](https://github.com/LuisBurgos/design-patterns/tree/master/src/factory/examples/cars)
-* [Armas](https://github.com/LuisBurgos/design-patterns/tree/master/src/factory/examples/weapons) (No implementado)
+* [Naves](https://github.com/LuisBurgos/design-patterns/tree/master/src/factory/examples/ships)
