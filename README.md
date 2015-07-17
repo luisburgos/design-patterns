@@ -15,6 +15,7 @@ La siguiente es una lista de patrones de diseño con descripcipnes breves y con 
 Relativos al proceso de creación de un objeto.
 
 * [Factory](#factory)
+* [Abstract Factory](#abstract-factory)
 
 ### Patrones de Estructura (Structural Patterns)
 
@@ -79,3 +80,20 @@ Crear objetos en una clase usando un método factory es más flexible que crear 
 
 * [Carros](https://github.com/LuisBurgos/design-patterns/tree/master/src/factory/examples/cars)
 * [Naves](https://github.com/LuisBurgos/design-patterns/tree/master/src/factory/examples/ships)
+
+## <a name="abstract-factory">Abstract Factory</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Proveer una interfaz para la creación de familias o objetos dependientes relacionados, sin especificar sus clases concretas.
+
+Es una jerarquía que encapsula muchas *familias* posibles y la creación de un conjunto de *productos*. El objeto "fábrica" tiene la responsabilidad de proporcionar servicios de creación para toda una familia de productos. Los "clientes" nunca crean directamente los objetos de la familia, piden la fábrica que los cree por ellos.
+
+**Aplicación:** Usamos el patrón Abstract Factory...
+* Cuando tenemos una o múltiples familias de productos.
+* Cuando tenemos muchos objetos que pueden ser cambiados o agregados durante el tiempo de ejecución.
+* Cuando queremos obtener un objeto compuesto de otros objetos, los cuales desconocemos a que clase pertenecen.
+* Para encapsular la creación de muchos objetos.
+
+**Ejemplos:**
+
+* [Ovnis](https://github.com/LuisBurgos/design-patterns/tree/master/src/abstractfactory/examples/ufo)
+* [El Reino](https://github.com/LuisBurgos/design-patterns/tree/master/src/abstractfactory/examples/kingdom)
