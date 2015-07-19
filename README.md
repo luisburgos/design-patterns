@@ -16,6 +16,7 @@ Relativos al proceso de creación de un objeto.
 
 * [Factory](#factory)
 * [Abstract Factory](#abstract-factory)
+* [Singleton](#singleton)
 
 ### Patrones de Estructura (Structural Patterns)
 
@@ -115,3 +116,16 @@ individual.
 * [Menu](https://github.com/LuisBurgos/design-patterns/tree/master/src/composite/examples/menu)
 * [Sistema de Archivos](https://github.com/LuisBurgos/design-patterns/tree/master/src/composite/examples/directories)
 * [Cartas](https://github.com/iluwatar/java-design-patterns/tree/master/composite/src/main/java/com/iluwatar/composite) (Externo).
+
+## <a name="singleton">Singleton</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Asegurar que una clase tenga una única instancia y proporcionar un punto de acceso global a la misma. El *cliente* llama a la función de acceso cuando se requiere una referencia a la instancia única.
+
+**Aplicación:** Usamos el patrón Singleton...
+* La aplicación necesita una, y sólo una, instancia de una clase, además está instancia requiere ser accesible desde cualquier punto de la aplicación.
+* Tipicamente para:
+  * Manejar conexiones con la base de datos.
+  * La clase para hacer Login.
+
+**Ejemplos:**
+* [Gobierno]((https://github.com/LuisBurgos/design-patterns/tree/master/src/singleton/examples/government)
