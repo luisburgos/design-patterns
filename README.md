@@ -100,7 +100,7 @@ Es una jerarquía que encapsula muchas *familias* posibles y la creación de un 
 
 ## <a name="composite">Composite</a> [&#8593;](#lista-de-patrones)
 
-**Propósito:** Componer objetos en estructuras de árbol que representan jerarquías de un **todo** y sus **partes.** El Composite provee a los *clientes* un mismo trato para todos los objetos que forman la jerarquía.
+**Propósito:** Componer objetos en estructuras de árbol que representan jerarquías de un *todo* y sus *partes.* El Composite provee a los *clientes* un mismo trato para todos los objetos que forman la jerarquía.
 
 Pensemos en nuestro sistema de archivos, este contiene *directorios* con *archivos* y a su vez estos *archivos* pueden ser otros *directorios* que contenga más *archivos*, y así sucesivamente. Lo anterior puede ser representado facilmente con el patrón Composite.
 
@@ -114,3 +114,4 @@ individual.
 **Ejemplos:**
 * [Menu](https://github.com/LuisBurgos/design-patterns/tree/master/src/composite/examples/menu)
 * [Sistema de Archivos](https://github.com/LuisBurgos/design-patterns/tree/master/src/composite/examples/directories)
+* [Cartas](https://github.com/iluwatar/java-design-patterns/tree/master/composite/src/main/java/com/iluwatar/composite) (Externo).
