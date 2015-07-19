@@ -128,4 +128,4 @@ individual.
   * La clase para hacer Login.
 
 **Ejemplos:**
-* [Gobierno]((https://github.com/LuisBurgos/design-patterns/tree/master/src/singleton/examples/government)
+* [Gobierno](https://github.com/LuisBurgos/design-patterns/tree/master/src/singleton/examples/government)
