@@ -7,12 +7,27 @@ public class ConcreteBuilder implements Builder{
 
     private Product product;
 
-    @Override
-    public void buildPart() {
-
+    public ConcreteBuilder() {
+        this.product = new Product();
     }
 
-    public Product getResult(){
+    @Override
+    public void buildPartOne() {
+        product.setPartOne("Part One");
+    }
+
+    @Override
+    public void buildPartTwo() {
+        product.setPartTwo("Part Two");
+    }
+
+    @Override
+    public void buildPartThree() {
+        product.setPartThree("Part Three");
+    }
+
+    @Override
+    public Product getProduct() {
         return product;
     }
 }

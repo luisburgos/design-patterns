@@ -5,7 +5,19 @@ package builder.pattern;
  */
 public class Director {
 
-    public void construct(Builder builder){
-        builder.buildPart(); //For all objects in structure.
+    private Builder builder;
+
+    public Director(Builder builder){
+        this.builder = builder;
+    }
+
+    public void makeProduct(){
+        builder.buildPartOne();
+        builder.buildPartTwo();
+        builder.buildPartThree();
+    }
+
+    public Product getProduct(){
+        return builder.getProduct();
     }
 }
