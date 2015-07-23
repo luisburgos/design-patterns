@@ -149,3 +149,4 @@ A diferencia de otros patrones creacionales que construyen productos de una sola
 **Ejemplos:**
 * [Robots](https://github.com/LuisBurgos/design-patterns/tree/master/src/builder/examples/robots)
 * [Comida rápida](https://github.com/LuisBurgos/design-patterns/tree/master/src/builder/examples/fastfood)
+* [Heroes](https://github.com/LuisBurgos/design-patterns/tree/master/src/builder/examples/heroes) (basado en el siguiente [proyecto](https://github.com/iluwatar/java-design-patterns/tree/master/builder/src/main/java/com/iluwatar/builder))
