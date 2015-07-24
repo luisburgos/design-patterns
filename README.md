@@ -151,3 +151,14 @@ A diferencia de otros patrones creacionales que construyen productos de una sola
 * [Pizza](https://github.com/LuisBurgos/design-patterns/tree/master/src/builder/examples/pizza)
 * [Robots](https://github.com/LuisBurgos/design-patterns/tree/master/src/builder/examples/robots)
 * [Comida rápida](https://github.com/LuisBurgos/design-patterns/tree/master/src/builder/examples/fastfood)
+
+## <a name="prototype">Prototype</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Especificar varios tipos de objetos que pueden ser creados en un prototipo para crear nuevos objetos copiando ese prototipo. Reduce la necesidad de crear subclases.
+
+**Aplicación:** Usamos el patrón Prototype...
+* Queremos crear nuevos objetos mediante la *clonación* o *copia* de otros.
+* Cuando tenemos muchas clases potenciales que queremos usar sólo si son requeridas durante el tiempo de ejecución.
+
+**Ejemplos:**
+* [Animales](https://github.com/LuisBurgos/design-patterns/tree/master/src/prototype/examples/animals)
