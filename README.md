@@ -18,6 +18,7 @@ Relativos al proceso de creación de un objeto.
 * [Abstract Factory](#abstract-factory)
 * [Singleton](#singleton)
 * [Builder](#builder)
+* [Prototype](#prototype)
 
 ### Patrones de Estructura (Structural Patterns)
 
