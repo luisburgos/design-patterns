@@ -25,6 +25,7 @@ Relativos al proceso de creación de un objeto.
 Composición de clases u objetos.
 
 * [Composite](#composite)
+* [Adapter](#adapter)
 
 ### Patrones de Comportamiento (Behavioral Patterns)
 
@@ -163,3 +164,16 @@ A diferencia de otros patrones creacionales que construyen productos de una sola
 
 **Ejemplos:**
 * [Animales](https://github.com/LuisBurgos/design-patterns/tree/master/src/prototype/examples/animals)
+
+## <a name="adapter">Adapter</a> [&#8593;](#lista-de-patrones)
+
+Como cualquier adaptador en el mundo real este patrón se utiliza para ser una interfaz, *un puente*, entre dos objetos. En el mundo real existen adaptadores para fuentes de alimentación, tarjetas de memoria de una cámara, entre otros. En el desarrollo de software, es lo mismo.
+
+**Propósito:** Convertir la interfaz (**adaptee**) de una clase en otra interfaz (**target**) que el *cliente* espera. Permitir a dos interfaces incompatibles trabajar en conjunto. Este patrón nos permite ver a nuevos y distintos elementos como si fueran igual a la interfaz conocida por nuestra aplicación.
+
+**Aplicación:** Usamos el patrón [Adapter...](https://github.com/LuisBurgos/design-patterns/tree/master/src/adapter/pattern)
+* Cuando el *cliente* espera usar la interfaz de destino (**target**).
+* Deseamos usar una clase existente pero la interfaz que ofrece no concuerda con la que necesitamos.
+
+**Ejemplos:**
+* [Books](https://github.com/LuisBurgos/design-patterns/tree/master/src/adapter/examples/books)
