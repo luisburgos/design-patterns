@@ -26,6 +26,7 @@ Composición de clases u objetos.
 
 * [Composite](#composite)
 * [Adapter](#adapter)
+* [Decorator](#decorator)
 
 ### Patrones de Comportamiento (Behavioral Patterns)
 
@@ -177,3 +178,18 @@ Como cualquier adaptador en el mundo real este patrón se utiliza para ser una i
 
 **Ejemplos:**
 * [Books](https://github.com/LuisBurgos/design-patterns/tree/master/src/adapter/examples/books)
+
+## <a name="decorator">Decorator</a> [&#8593;](#lista-de-patrones)
+
+Extender la funcionalidad de los objetos se puede hacer de forma estática en nuestro código (tiempo de compilación) mediante el uso de la herencia, sin embargo, podría ser necesario extender la funcionalidad de un objeto de manera dinámica.
+
+**Propósito:** Adjuntar responsabilidades adicionales a un objeto de forma **dinámica**. Los *decoradores* proporcionan una alternativa flexible para ampliar la funcionalidad.
+
+**Aplicación:** Usamos el patrón [Decorator...](https://github.com/LuisBurgos/design-patterns/tree/master/src/decorator/pattern)
+*  Cuando necesitamos añadir o eliminar dinámicamente las responsabilidades a un objeto, sin afectar a otros objetos.
+* Cuando queremos tener las ventajas de la *Herencia* pero ncesitemos añadir funcionalidad durante el tiempo de ejecución. Es más flexible que la *Herencia*,
+* Simplificar el código agregando funcionalidades usando muchas clases diferentes.
+* Evitar sobreescribir código viejo agregando, envés, código nuevo.
+
+**Ejemplos:**
+* [Pizzas](https://github.com/LuisBurgos/design-patterns/tree/master/src/decorator/examples/pizzas)
