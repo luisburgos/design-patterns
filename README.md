@@ -14,26 +14,27 @@ La siguiente es una lista de patrones de diseño con descripcipnes breves y con 
 
 Relativos al proceso de creación de un objeto.
 
-* [Factory](#factory)
 * [Abstract Factory](#abstract-factory)
-* [Singleton](#singleton)
 * [Builder](#builder)
+* [Factory](#factory)
 * [Prototype](#prototype)
+* [Singleton](#singleton)
 
 ### Patrones de Estructura (Structural Patterns)
 
 Composición de clases u objetos.
 
-* [Composite](#composite)
 * [Adapter](#adapter)
+* [Composite](#composite)
 * [Decorator](#decorator)
+* [Facade](#facade)
 
 ### Patrones de Comportamiento (Behavioral Patterns)
 
 Forma en que clases las u objetos interaccionan y distribuyen funcionalidades.
 
-* [Strategy](#strategy)
 * [Observer](#observer)
+* [Strategy](#strategy)
 
 ## <a name="strategy">Strategy</a> [&#8593;](#lista-de-patrones)
 
@@ -193,3 +194,24 @@ Extender la funcionalidad de los objetos se puede hacer de forma estática en nu
 
 **Ejemplos:**
 * [Pizzas](https://github.com/LuisBurgos/design-patterns/tree/master/src/decorator/examples/pizzas)
+
+## <a name="facade">Facade</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Proporcionar una interfaz unificada para un conjunto de interfaces de un subsistema. *Facade* define una interfaz de alto nivel que hace que el subsistema sea más fácil de usar.
+
+**Detalles:**
+* Este patrón protege los clientes de los componentes del subsistema, propiciando el menor uso de componentes para que el subsistema pueda ser utilizado.
+* Además, promueve un bajo acoplamiento entre subsistemas y clientes.
+* Este patrón no evita que los clientes usen las clases internas del subsistema, si es que es necesario.
+* Es importante mencionar que el objeto *Facade* debe ser extremadamente simple. **No** debe convertirse en un **objeto "dios".**
+
+**Aplicación:** Usamos el patrón [Facade...](https://github.com/LuisBurgos/design-patterns/tree/master/src/facade/pattern)
+* Cuando queremos encapsular un subsistema complejo con una interface más simple.
+* Para crear una interface simplificada que ejecuta muchas acciones "detŕas del escenario".
+* Existen muchas dependencias entre clientes y la implementación de clases de una abstracción. Se introduce el facade para desacoplar el subsistema de los clientes y otros subsistemas.
+* Necesitamos *desacoplar* subsistemas entre sí, haciendo que se comuniquen únicamente mediante *Facades*.
+* Para definir un punto de entrada a cada nivel del subsistema.
+
+**Ejemplos:**
+* [Banco](https://github.com/LuisBurgos/design-patterns/tree/master/src/facade/examples/bank)
+* [Computadora](https://github.com/LuisBurgos/design-patterns/tree/master/src/facade/examples/computer)
