@@ -33,6 +33,7 @@ Composición de clases u objetos.
 
 Forma en que clases las u objetos interaccionan y distribuyen funcionalidades.
 
+* [Command](#command)
 * [Observer](#observer)
 * [Strategy](#strategy)
 
@@ -215,3 +216,25 @@ Extender la funcionalidad de los objetos se puede hacer de forma estática en nu
 **Ejemplos:**
 * [Banco](https://github.com/LuisBurgos/design-patterns/tree/master/src/facade/examples/bank)
 * [Computadora](https://github.com/LuisBurgos/design-patterns/tree/master/src/facade/examples/computer)
+
+## <a name="command">Command</a> [&#8593;](#lista-de-patrones)
+
+ El patrón *Command* encapsula comandos( llamados a métodos) en objetos, permitiéndonos realizar peticiones sin conocer exactamente la petición que se realiza o el objeto al cuál se le hace la petición. Este patrón nos provee las opciones para hacer listas de comandos, hacer/deshacer acciones y otras manipulaciones.
+
+ Este patrón desacopla al *objeto que invoca* la operación del *objeto que sabe cómo* llevar a cabo la misma. Un objeto llamado *Invoker* transfiere el *comando* a otro objeto llamado *Receiver* el cual ejecuta el código correcto para el *comando* recibido.
+
+**Propósito:** Encapsular una petición en forma de objeto, permitiendo de ese modo que parametrizar clientes con diferentes peticiones, "colas" o registros de solicitudes, y apoyar las operaciones de deshacer.
+
+**Aplicación:** Usamos el patrón [Command...](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/pattern)
+* Cuando queremos realizar peticiones en diferentes tiempos. Se puede hacer a través de la especificación de una "cola".
+* Para implementar la función de deshacer (*undo*), ya que se puede almacenar el estado de la ejecución del comando para revertir sus efectos.
+* Cuando necesitemos mantener un registro (*log*) de los cambios y acciones.
+
+**Usos típicos:**
+* Mantener un historial de peticiones. (*requests*)
+* Implementar la funcionalidad de *callbacks*.
+* Implementar la funcionalidad de *undo*.
+
+**Ejemplos:**
+* [Televisión](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/tv)
+* [Hechizos](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/spells) (No implementado aún)
