@@ -1,6 +1,6 @@
-package command.examples.tv.commands;
+package command.examples.devices.commands;
 
-import command.examples.tv.devices.ElectronicDevice;
+import command.examples.devices.devices.ElectronicDevice;
 
 import java.util.List;
 

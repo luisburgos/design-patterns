@@ -1,12 +1,12 @@
-package command.examples.tv;
+package command.examples.devices;
 
-import command.examples.tv.commands.TurnOffAllDevices;
-import command.examples.tv.commands.TurnOffTelevision;
-import command.examples.tv.commands.TurnOnTelevision;
-import command.examples.tv.commands.VolumeUpTelevision;
-import command.examples.tv.devices.ElectronicDevice;
-import command.examples.tv.devices.Radio;
-import command.examples.tv.devices.Television;
+import command.examples.devices.commands.TurnOffAllDevices;
+import command.examples.devices.commands.TurnOffTelevision;
+import command.examples.devices.commands.TurnOnTelevision;
+import command.examples.devices.commands.VolumeUpTelevision;
+import command.examples.devices.devices.ElectronicDevice;
+import command.examples.devices.devices.Radio;
+import command.examples.devices.devices.Television;
 
 import java.util.ArrayList;
 import java.util.List;

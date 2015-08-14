@@ -1,4 +1,4 @@
-package command.examples.tv.commands;
+package command.examples.devices.commands;
 
 /**
  * Created by luisburgos on 13/08/15.

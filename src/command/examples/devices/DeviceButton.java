@@ -1,6 +1,6 @@
-package command.examples.tv;
+package command.examples.devices;
 
-import command.examples.tv.commands.Command;
+import command.examples.devices.commands.Command;
 
 /**
  * The INVOKER

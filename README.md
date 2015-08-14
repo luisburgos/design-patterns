@@ -236,5 +236,5 @@ Extender la funcionalidad de los objetos se puede hacer de forma estática en nu
 * Implementar la funcionalidad de *undo*.
 
 **Ejemplos:**
-* [Televisión](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/tv)
-* [Hechizos](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/spells) (No implementado aún)
+* [Electrónicos](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/devices)
+* [Hechizos](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/spells) 
