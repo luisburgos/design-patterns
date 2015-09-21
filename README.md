@@ -28,6 +28,7 @@ Composición de clases u objetos.
 * [Composite](#composite)
 * [Decorator](#decorator)
 * [Facade](#facade)
+* [Proxy](#proxy)
 
 ### Patrones de Comportamiento (Behavioral Patterns)
 
@@ -237,4 +238,33 @@ Extender la funcionalidad de los objetos se puede hacer de forma estática en nu
 
 **Ejemplos:**
 * [Electrónicos](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/devices)
-* [Hechizos](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/spells) 
+* [Hechizos](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/spells)
+
+## <a name="proxy">Proxy</a> [&#8593;](#lista-de-patrones)
+
+Tengamos en cuenta el siguiente escenario: Es necesario instanciar objetos sólo cuando sean efectivamente solicitados (*request*) por el cliente.
+
+Un **Proxy** o sustituto:
+1. Crea una instancia del objeto real la primera vez que el cliente realiza una solicitud del proxy.
+2. Recuerda la identidad de este objeto real.
+3. Finalmente, envía la solicitud del servicio al objeto real.
+
+**Propósito:**
+* Proveer un sustituto o *"placeholder"* de otro objeto para controlar el acceso a este.
+* Usar un nivel extra de indirección para permitir el acceso distribuido, controlado e inteligente.
+* Agregar un *"wrapper"* para proteger el componente real de la complejidad innecesaria. Este *wrapper* permite agregar funcionalidad al objeto de interés sin cambiar el código del objeto.
+
+**Aplicación:** Usamos el patrón [Proxy...](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/pattern)
+* Cuando haya necesidad de una referencia más versátil y sofisticada a un objeto, no un simple puntero.
+* Para adicionar seguridad al acceso de un objeto. El Proxy determinará si el cliente puede acceder al objeto de interés.
+* Para proporcionar una API simplificada para que el código del cliente no tenga que lidiar con la complejidad del código del objeto de interés.
+* Para proporcionar una interfaz de los *web services* o recursos *REST*.
+
+**Escenarios de uso:**
+* *Remote Proxy*: Representa un objeto local que pertenece a un espacio de direcciones diferente.
+* *Virtual Proxy*: En lugar de un objeto complejo o pesado, utiliza una representación de esqueleto. Consideremos una imagen la cual es enorme en tamaño, podemos representarla mediante un objeto proxy virtual y cuando sea solicitado cargamos el objeto real.
+* *Protection Proxy*: Controla el acceso al objeto original. Este tipo es útil cuando se necesita manejar diferentes permisos de acceso.
+
+**Ejemplos:**
+* [Images](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/examples/images)
+* [ATM](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/examples/atm)
