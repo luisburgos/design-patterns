@@ -205,8 +205,8 @@ Extender la funcionalidad de los objetos se puede hacer de forma estática en nu
 **Propósito:** Adjuntar responsabilidades adicionales a un objeto de forma **dinámica**. Los *decoradores* proporcionan una alternativa flexible para ampliar la funcionalidad.
 
 **Aplicación:** Usamos el patrón [Decorator...](https://github.com/LuisBurgos/design-patterns/tree/master/src/decorator/pattern)
-*  Cuando necesitamos añadir o eliminar dinámicamente las responsabilidades a un objeto, sin afectar a otros objetos.
-* Cuando queremos tener las ventajas de la *Herencia* pero necesitemos añadir funcionalidad durante el tiempo de ejecución. Es más flexible que la *Herencia*,
+* Cuando necesitamos añadir o eliminar dinámicamente las responsabilidades a un objeto, sin afectar a otros objetos.
+* Cuando queremos tener las ventajas de la *Herencia* pero ncesitemos añadir funcionalidad durante el tiempo de ejecución. Es más flexible que la *Herencia*,
 * Simplificar el código agregando funcionalidades usando muchas clases diferentes.
 * Evitar sobreescribir código viejo agregando, envés, código nuevo.
 
@@ -301,4 +301,4 @@ En algunos casos los recursos pueden ser limitados por lo que se especifica un n
 * *Database connection*: Si hay una necesidad de abrir demasiadas conexiones para una base de datos tomaría demasiado tiempo crear una nueva y el servidor de base de datos podría sobrecargarse.
 * *Share resources*: Diferentes clientes necesitarán el mismo recurso en diferentes momentos.
 
-**Referencia:** https://www.javatpoint.com/object-pool-pattern
+**Referencia:** [https://www.javatpoint.com/object-pool-pattern](https://www.javatpoint.com/object-pool-pattern)
