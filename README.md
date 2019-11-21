@@ -197,6 +197,7 @@ Como cualquier adaptador en el mundo real este patrón se utiliza para ser una i
 
 **Ejemplos:**
 * [Books](https://github.com/LuisBurgos/design-patterns/tree/master/src/adapter/examples/books)
+* [Users](https://github.com/peterm85/design-patterns/tree/master/src/adapter/examples/users) *from:* [https://www.oscarblancarteblog.com/2019/09/05/java-converter-pattern/](https://www.oscarblancarteblog.com/2019/09/05/java-converter-pattern/)
 
 ## <a name="decorator">Decorator</a> [&#8593;](#lista-de-patrones)
 
