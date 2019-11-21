@@ -10,33 +10,49 @@ La siguiente es una lista de patrones de diseño con descripcipnes breves y con 
 
 ## <a name="lista-de-patrones">Lista de Patrones de Diseño.</a>
 
+Ámbito:
+
+* [**C**] Clase 
+* [**O**] Objeto
+
 ### Patrones de Creación (Creational Patterns)
 
 Relativos al proceso de creación de un objeto.
 
-* [Abstract Factory](#abstract-factory)
-* [Builder](#builder)
-* [Factory](#factory)
-* [Prototype](#prototype)
-* [Singleton](#singleton)
+* [Abstract Factory](#abstract-factory) [**O**]
+* [Builder](#builder) [**O**]
+* [Factory o Factory Method](#factory) [**C**]
+* [Prototype](#prototype) [**O**]
+* [Singleton](#singleton) [**O**]
+* [Object Pool](#objectpool) [**O**]
 
 ### Patrones de Estructura (Structural Patterns)
 
 Composición de clases u objetos.
 
-* [Adapter](#adapter)
-* [Composite](#composite)
-* [Decorator](#decorator)
-* [Facade](#facade)
-* [Proxy](#proxy)
+* [Adapter](#adapter) [**O**] [**C**]
+* [Composite](#composite) [**O**]
+* [Decorator](#decorator) [**O**]
+* [Facade](#facade) [**O**]
+* [Proxy](#proxy) [**O**]
+* [Bridge] [**O**]
+* [Flyweight] [**O**]
 
 ### Patrones de Comportamiento (Behavioral Patterns)
 
-Forma en que clases las u objetos interaccionan y distribuyen funcionalidades.
+Forma en que las clases u objetos interaccionan y distribuyen funcionalidades.
 
-* [Command](#command)
-* [Observer](#observer)
-* [Strategy](#strategy)
+* [Command](#command) [**O**]
+* [Observer](#observer) [**O**]
+* [Strategy](#strategy) [**O**]
+* [Chain of Responsability] [**O**]
+* [Memento] [**O**]
+* [Mediator] [**O**]
+* [Templete method] [**C**]
+* [Iterator] [**O**]
+* [Visitor] [**O**]
+* [State] [**O**]
+* [Interpreter] [**C**]
 
 ## <a name="strategy">Strategy</a> [&#8593;](#lista-de-patrones)
 
@@ -56,7 +72,7 @@ Forma en que clases las u objetos interaccionan y distribuyen funcionalidades.
 
 ## <a name="observer">Observer</a> [&#8593;](#lista-de-patrones)
 
-**Propósito:** Defina una dependencia de uno a muchos entre los objetos de manera que cuando un objeto cambia de estado, todos los que dependen de él son notificados y se actualizan automáticamente.
+**Propósito:** Definir una dependencia de uno a muchos entre los objetos de manera que cuando un objeto cambia de estado, todos los que dependen de él son notificados y se actualizan automáticamente.
 
 Los *Observers* se registran con el *Subject*  a medida que se crean. Siempre que el Subject cambie, difundirá a todos los Observers registrados que ha cambiado, y cada Observer consulta al Subject que supervisa para obtener el cambio de estado que se haya generado.
 
@@ -73,11 +89,11 @@ El ejemplo de Subasta presenta una variante distinta de muchas fuentes en Intern
 
 * [Subasta](https://github.com/LuisBurgos/design-patterns/tree/master/src/observer/examples/auction)
 
-## <a name="factory">Factory</a> [&#8593;](#lista-de-patrones)
+## <a name="factory">Factory o Factory Method</a> [&#8593;](#lista-de-patrones)
 
-**Propósito:** Definir una interface para crear un objeto, dejando a las subclases decidir de que tipo de clase se realizará la instancia. Reducir el uso del operador *new*.
+**Propósito:** Definir una interface para crear un objeto, dejando a las subclases decidir de que tipo de clase se realizará la instancia en tiempo de ejecución. Reducir el uso del operador *new*.
 
-Crear objetos en una clase usando un método factory es más flexible que crear un objeto directamente. Es posible conectar la generación de familias de clases que tienen comportamientos en común. Elimina la necesidad de estar haciendo binding (casting) hacia clases específicas dentro del código, ya que este solo se entiende con las clases abstractas.
+Crear objetos en una clase usando un método factory es más flexible que crear un objeto directamente. Es posible conectar la generación de familias de clases que tienen comportamientos en común. Elimina la necesidad de estar haciendo binding (casting) hacia clases específicas dentro del código, ya que éste sólo se entiende con las clases abstractas.
 
 **Aplicación:** Usamos el patrón Factory...
 * Cuando una clase no puede anticipar que clase de objetos debe crear, esto se sabe durante el tiempo de ejecución.
@@ -91,7 +107,7 @@ Crear objetos en una clase usando un método factory es más flexible que crear 
 
 ## <a name="abstract-factory">Abstract Factory</a> [&#8593;](#lista-de-patrones)
 
-**Propósito:** Proveer una interfaz para la creación de familias o objetos dependientes relacionados, sin especificar sus clases concretas.
+**Propósito:** Proveer una interfaz para la creación de familias u objetos dependientes relacionados, sin especificar sus clases concretas.
 
 Es una jerarquía que encapsula muchas *familias* posibles y la creación de un conjunto de *productos*. El objeto "fábrica" tiene la responsabilidad de proporcionar servicios de creación para toda una familia de productos. Los "clientes" nunca crean directamente los objetos de la familia, piden la fábrica que los cree por ellos.
 
@@ -141,7 +157,7 @@ individual.
 
 **Propósito:** Separar la construcción de un objeto complejo de su representación para que el mismo proceso de construcción puede crear diferentes representaciones.
 
-Nos permite crear un objeto que está compuesto por muchoso otros objetos. Sólo el "*Builder*" conoce a detalle las clases concretas de los objetos que serán creados, nadie más.
+Nos permite crear un objeto que está compuesto por muchos otros objetos. Sólo el "*Builder*" conoce a detalle las clases concretas de los objetos que serán creados, nadie más.
 
 En este patrón intervienen un "*Director*" y un "*Builder*". El "*Director*" invoca los servicios del "*Builder*" el cual va creando las partes de un objeto complejo y al mismo tiempo guardo un estado intermedio de la construcción del objeto. Cuando el producto se ha construido por completo el *cliente* recupera el resultado.
 
@@ -268,3 +284,30 @@ Un **Proxy** o sustituto:
 **Ejemplos:**
 * [Images](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/examples/images)
 * [ATM](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/examples/atm)
+
+## <a name="objectpool">Object Pool</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Permite reutilizar objetos con el fin de evitar el costo de crearlos cada vez que la aplicación los requiera, manteniendo así un almacén de objetos creados previamente para ser utilizados.
+
+Cuando un objeto es tomado del pool dejará de estar disponible hasta que se devuelva.
+Si no hay objetos disponibles, se crea uno nuevo y se agrega al conjunto.
+En algunos casos los recursos pueden ser limitados por lo que se especifica un número máximo de objetos. Si se alcanza este número y se solicita un nuevo elemento, puede lanzarse una excepción, o se puede bloquear el hilo de trabajo hasta que un objeto se libere de nuevo.
+
+Los objetos en el pool tienen el siguiente ciclo de vida:
+
+* Creación
+* Validación
+* Destrucción
+
+**Aplicación:** Usamos el patrón Object Pool cuando...
+* Se requiere trabajar con una gran cantidad de objetos, los cuales son computacionalmente caros de crear.
+* Se requiere trabjar con objetos por un tiempo muy corto y que luego de su uso son desechados.
+
+**Escenarios de uso:**
+* *Database connection*: Si hay una necesidad de abrir demasiadas conexiones para una base de datos tomaría demasiado tiempo crear una nueva y el servidor de base de datos podría sobrecargarse.
+* *Share resources*: Diferentes clientes necesitarán el mismo recurso en diferentes momentos.
+
+**Ejemplos:**
+* [Ejemplo](https://github.com/peterm85/design-patterns/tree/master/src/objectpool/pattern)
+
+**Referencia:** https://www.javatpoint.com/object-pool-pattern
