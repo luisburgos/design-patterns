@@ -201,13 +201,13 @@ Como cualquier adaptador en el mundo real este patrón se utiliza para ser una i
 
 ## <a name="decorator">Decorator</a> [&#8593;](#lista-de-patrones)
 
-Extender la funcionalidad de los objetos se puede hacer de forma estática en nuestro código (tiempo de compilación) mediante el uso de la herencia, sin embargo, podría ser necesario extender la funcionalidad de un objeto de manera dinámica.
+Extender la funcionalidad de los objetos se puede hacer de forma estática en nuestro código (tiempo de **compilación**) mediante el uso de la herencia, sin embargo, podría ser necesario extender la funcionalidad de un objeto de manera dinámica.
 
 **Propósito:** Adjuntar responsabilidades adicionales a un objeto de forma **dinámica**. Los *decoradores* proporcionan una alternativa flexible para ampliar la funcionalidad.
 
 **Aplicación:** Usamos el patrón [Decorator...](https://github.com/LuisBurgos/design-patterns/tree/master/src/decorator/pattern)
 * Cuando necesitamos añadir o eliminar dinámicamente las responsabilidades a un objeto, sin afectar a otros objetos.
-* Cuando queremos tener las ventajas de la *Herencia* pero ncesitemos añadir funcionalidad durante el tiempo de ejecución. Es más flexible que la *Herencia*,
+* Cuando queremos tener las ventajas de la *Herencia* pero necesitemos añadir funcionalidad durante el tiempo de ejecución. Es más flexible que la *Herencia*,
 * Simplificar el código agregando funcionalidades usando muchas clases diferentes.
 * Evitar sobreescribir código viejo agregando, envés, código nuevo.
 
@@ -235,6 +235,40 @@ Extender la funcionalidad de los objetos se puede hacer de forma estática en nu
 * [Banco](https://github.com/LuisBurgos/design-patterns/tree/master/src/facade/examples/bank)
 * [Computadora](https://github.com/LuisBurgos/design-patterns/tree/master/src/facade/examples/computer)
 
+## <a name="proxy">Proxy</a> [&#8593;](#lista-de-patrones)
+
+Tengamos en cuenta el siguiente escenario: Es necesario instanciar objetos sólo cuando sean efectivamente solicitados (*request*) por el cliente.
+
+Un **Proxy** o sustituto:
+1. Crea una instancia del objeto real la primera vez que el cliente realiza una solicitud del proxy.
+2. Recuerda la identidad de este objeto real.
+3. Finalmente, envía la solicitud del servicio al objeto real.
+
+**Propósito:**
+* Proveer un sustituto o *"placeholder"* de otro objeto para controlar el acceso a este.
+* Usar un nivel extra de indirección para permitir el acceso distribuido, controlado e inteligente.
+* Agregar un *"wrapper"* para proteger el componente real de la complejidad innecesaria. Este *wrapper* permite agregar funcionalidad al objeto de interés sin cambiar el código del objeto.
+
+Aunque tenga similitudes al patrón Facade, ambos son diferentes. 
+* Mientras que los objetos Proxy representan a un objeto, los objetos Facade representan a un subsistema de objetos.
+* Un objeto cliente Proxy no puede acceder a un objeto interno directamente, mientras que Facade no lo impide.
+* Un objeto Proxy provee control de acceso a un único objeto de interés. Sin embargo, un objeto Facade provee una interface de alto nivel a un subsistema de objetos.
+
+**Aplicación:** Usamos el patrón [Proxy...](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/pattern)
+* Cuando haya necesidad de una referencia más versátil y sofisticada a un objeto, no un simple puntero.
+* Para adicionar seguridad al acceso de un objeto. El Proxy determinará si el cliente puede acceder al objeto de interés.
+* Para proporcionar una API simplificada para que el código del cliente no tenga que lidiar con la complejidad del código del objeto de interés.
+* Para proporcionar una interfaz de los *web services* o recursos *REST*.
+
+**Escenarios de uso:**
+* *Remote Proxy*: Representa un objeto local que pertenece a un espacio de direcciones diferente.
+* *Virtual Proxy*: En lugar de un objeto complejo o pesado, utiliza una representación de esqueleto. Consideremos una imagen la cual es enorme en tamaño, podemos representarla mediante un objeto proxy virtual y cuando sea solicitado cargamos el objeto real.
+* *Protection Proxy*: Controla el acceso al objeto original. Este tipo es útil cuando se necesita manejar diferentes permisos de acceso.
+
+**Ejemplos:**
+* [Images](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/examples/images)
+* [ATM](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/examples/atm)
+
 ## <a name="command">Command</a> [&#8593;](#lista-de-patrones)
 
  El patrón *Command* encapsula comandos( llamados a métodos) en objetos, permitiéndonos realizar peticiones sin conocer exactamente la petición que se realiza o el objeto al cuál se le hace la petición. Este patrón nos provee las opciones para hacer listas de comandos, hacer/deshacer acciones y otras manipulaciones.
@@ -256,35 +290,6 @@ Extender la funcionalidad de los objetos se puede hacer de forma estática en nu
 **Ejemplos:**
 * [Electrónicos](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/devices)
 * [Hechizos](https://github.com/LuisBurgos/design-patterns/tree/master/src/command/examples/spells)
-
-## <a name="proxy">Proxy</a> [&#8593;](#lista-de-patrones)
-
-Tengamos en cuenta el siguiente escenario: Es necesario instanciar objetos sólo cuando sean efectivamente solicitados (*request*) por el cliente.
-
-Un **Proxy** o sustituto:
-1. Crea una instancia del objeto real la primera vez que el cliente realiza una solicitud del proxy.
-2. Recuerda la identidad de este objeto real.
-3. Finalmente, envía la solicitud del servicio al objeto real.
-
-**Propósito:**
-* Proveer un sustituto o *"placeholder"* de otro objeto para controlar el acceso a este.
-* Usar un nivel extra de indirección para permitir el acceso distribuido, controlado e inteligente.
-* Agregar un *"wrapper"* para proteger el componente real de la complejidad innecesaria. Este *wrapper* permite agregar funcionalidad al objeto de interés sin cambiar el código del objeto.
-
-**Aplicación:** Usamos el patrón [Proxy...](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/pattern)
-* Cuando haya necesidad de una referencia más versátil y sofisticada a un objeto, no un simple puntero.
-* Para adicionar seguridad al acceso de un objeto. El Proxy determinará si el cliente puede acceder al objeto de interés.
-* Para proporcionar una API simplificada para que el código del cliente no tenga que lidiar con la complejidad del código del objeto de interés.
-* Para proporcionar una interfaz de los *web services* o recursos *REST*.
-
-**Escenarios de uso:**
-* *Remote Proxy*: Representa un objeto local que pertenece a un espacio de direcciones diferente.
-* *Virtual Proxy*: En lugar de un objeto complejo o pesado, utiliza una representación de esqueleto. Consideremos una imagen la cual es enorme en tamaño, podemos representarla mediante un objeto proxy virtual y cuando sea solicitado cargamos el objeto real.
-* *Protection Proxy*: Controla el acceso al objeto original. Este tipo es útil cuando se necesita manejar diferentes permisos de acceso.
-
-**Ejemplos:**
-* [Images](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/examples/images)
-* [ATM](https://github.com/LuisBurgos/design-patterns/tree/master/src/proxy/examples/atm)
 
 ## <a name="objectpool">Object Pool</a> [&#8593;](#lista-de-patrones)
 
