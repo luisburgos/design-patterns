@@ -6,7 +6,7 @@ Christopher Alexander dice “Cada patrón describe un problema que ocurre una y
 
 En otra definición, “Los patrones de diseño son el esqueleto de las soluciones a problemas comunes en el desarrollo de software.”
 
-La siguiente es una lista de patrones de diseño con descripcipnes breves y con aplicaciones en ejemplos muy sencillos de entender.
+La siguiente es una lista de patrones de diseño con descripciones breves y con aplicaciones en ejemplos muy sencillos de entender. En algunos casos se trata de recopilaciones de otros autores, a los que se podrá acceder para ampliar la información.
 
 ## <a name="lista-de-patrones">Lista de Patrones de Diseño.</a>
 
@@ -36,7 +36,7 @@ Composición de clases u objetos.
 * [Facade](#facade) [**O**]
 * [Proxy](#proxy) [**O**]
 * [Bridge](#bridge) [**O**]
-* [Flyweight] [**O**]
+* [Flyweight](#flyweigh) [**O**]
 
 ### Patrones de Comportamiento (Behavioral Patterns)
 
@@ -328,3 +328,19 @@ En algunos casos los recursos pueden ser limitados por lo que se especifica un n
 * [Taller](https://github.com/peterm85/design-patterns/tree/master/src/bridge/examples/workshop)
 
 **Referencia:** [https://www.geeksforgeeks.org/bridge-design-pattern/](https://www.geeksforgeeks.org/bridge-design-pattern/)
+
+## <a name="flyweigh">Flyweight</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Permite eliminar o reducir la redundancia cuando tenemos gran cantidad de objetos que contienen información idéntica, además de lograr un equilibrio entre flexibilidad y rendimiento (uso de recursos).
+
+Una característica importante es que los objetos Flyweight son **inmutables**, por lo que no podrán ser modificados una vez construidos.
+Puede utilizarse conjuntamente con el patrón Factory, de tal modo que en el momento en que se soliciten instancias del objeto, compruebe si ya existe un tipo Flyweight y devuelva esa referencia. En caso de que no exista la creará y la registrará.
+
+**Aplicación:** Usamos el patrón Flyweight cuando...
+* Reducir el uso de memoria y/o evitar errores con la misma (java.lang.OutOfMemoryError).
+* Aunque la creación de objetos puede ser rápida, se podría reducir los tiempos de ejecución compartiendo objetos.
+
+**Ejemplos:**
+* [Counter Strike](https://github.com/peterm85/design-patterns/tree/master/src/flyweigh/examples/counterstrike)
+
+**Referencia:** [https://www.geeksforgeeks.org/flyweight-design-pattern/](https://www.geeksforgeeks.org/flyweight-design-pattern/)
