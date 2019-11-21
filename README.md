@@ -45,7 +45,7 @@ Forma en que las clases u objetos interaccionan y distribuyen funcionalidades.
 * [Command](#command) [**O**]
 * [Observer](#observer) [**O**]
 * [Strategy](#strategy) [**O**]
-* [Chain of Responsability] [**O**]
+* [Chain of Responsability](#chain) [**O**]
 * [Memento] [**O**]
 * [Mediator] [**O**]
 * [Templete method] [**C**]
@@ -342,5 +342,21 @@ Puede utilizarse conjuntamente con el patrón Factory, de tal modo que en el mom
 
 **Ejemplos:**
 * [Counter Strike](https://github.com/peterm85/design-patterns/tree/master/src/flyweight/examples/counterstrike)
+
+**Referencia:** [https://www.geeksforgeeks.org/flyweight-design-pattern/](https://www.geeksforgeeks.org/flyweight-design-pattern/)
+
+## <a name="chain">Chain of Responsability</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Evita acoplar el emisor de una petición a su receptor dando a más de un objeto la posibilidad de responder a una petición.
+
+Cada elemento deberá tener referencia al siguiente.
+
+**Aplicación:** Usamos el patrón Chain of Responsability cuando...
+* Hay más de un objeto que puede manejar una petición, y el manejador no se conoce a priori, sino que debería determinarse automáticamente.
+* Se quiere enviar una petición a un objeto entre varios sin especificar explícitamente el receptor.
+* El conjunto de objetos que pueden tratar una petición debería ser especificado dinámicamente.
+
+**Ejemplos:**
+* [Army](https://github.com/peterm85/design-patterns/tree/master/src/chain/examples/army)
 
 **Referencia:** [https://www.geeksforgeeks.org/flyweight-design-pattern/](https://www.geeksforgeeks.org/flyweight-design-pattern/)
