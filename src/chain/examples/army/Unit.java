@@ -2,6 +2,8 @@ package chain.examples.army;
 
 public abstract class Unit {
 
+	static final String UNKNOWN_ORDER = "(sin orden)";
+	
 	private Unit _command;
     private String _name;
 	
@@ -19,6 +21,6 @@ public abstract class Unit {
     }
 
     public String order() {
-        return (_command != null ? _command.order() : "(sin orden)"); 
+        return (_command != null ? _command.order() : UNKNOWN_ORDER); 
     }
 }

@@ -13,7 +13,7 @@ public class Officer extends Unit {
     public String order() {
     	String result=null;
     	
-    	if(super.order()!=null && !super.order().equals("(sin orden)")) {
+    	if(super.order()!=null && !super.order().equals(UNKNOWN_ORDER)) {
     		result = super.order();
     	
     	}else if (_order != null) {
