@@ -341,6 +341,6 @@ Puede utilizarse conjuntamente con el patrón Factory, de tal modo que en el mom
 * Aunque la creación de objetos puede ser rápida, se podría reducir los tiempos de ejecución compartiendo objetos.
 
 **Ejemplos:**
-* [Counter Strike](https://github.com/peterm85/design-patterns/tree/master/src/flyweigh/examples/counterstrike)
+* [Counter Strike](https://github.com/peterm85/design-patterns/tree/master/src/flyweight/examples/counterstrike)
 
 **Referencia:** [https://www.geeksforgeeks.org/flyweight-design-pattern/](https://www.geeksforgeeks.org/flyweight-design-pattern/)
