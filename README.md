@@ -35,7 +35,7 @@ Composición de clases u objetos.
 * [Decorator](#decorator) [**O**]
 * [Facade](#facade) [**O**]
 * [Proxy](#proxy) [**O**]
-* [Bridge] [**O**]
+* [Bridge](#bridge) [**O**]
 * [Flyweight] [**O**]
 
 ### Patrones de Comportamiento (Behavioral Patterns)
