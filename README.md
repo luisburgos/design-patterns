@@ -358,5 +358,3 @@ Cada elemento deberá tener referencia al siguiente.
 
 **Ejemplos:**
 * [Army](https://github.com/peterm85/design-patterns/tree/master/src/chain/examples/army)
-
-**Referencia:** [https://www.geeksforgeeks.org/flyweight-design-pattern/](https://www.geeksforgeeks.org/flyweight-design-pattern/)
