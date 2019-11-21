@@ -249,7 +249,7 @@ Un **Proxy** o sustituto:
 * Usar un nivel extra de indirección para permitir el acceso distribuido, controlado e inteligente.
 * Agregar un *"wrapper"* para proteger el componente real de la complejidad innecesaria. Este *wrapper* permite agregar funcionalidad al objeto de interés sin cambiar el código del objeto.
 
-Aunque tenga similitudes al patrón Facade, ambos son diferentes. 
+Aunque a simple vista tenga similitudes al patrón Facade, ambos tiene matices diferentes. 
 * Mientras que los objetos Proxy representan a un objeto, los objetos Facade representan a un subsistema de objetos.
 * Un objeto cliente Proxy no puede acceder a un objeto interno directamente, mientras que Facade no lo impide.
 * Un objeto Proxy provee control de acceso a un único objeto de interés. Sin embargo, un objeto Facade provee una interface de alto nivel a un subsistema de objetos.
@@ -308,3 +308,23 @@ En algunos casos los recursos pueden ser limitados por lo que se especifica un n
 * *Share resources*: Diferentes clientes necesitarán el mismo recurso en diferentes momentos.
 
 **Referencia:** [https://www.javatpoint.com/object-pool-pattern](https://www.javatpoint.com/object-pool-pattern)
+
+## <a name="bridge">Bridge</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Permite desacoplar una abstracción de su implementación, de manera que ambas puedan ser modificadas independientemente sin necesidad de alterar por ello la otra.
+
+**Aplicación:** Usamos el patrón [Bridge](https://github.com/peterm85/design-patterns/tree/master/src/bridge/pattern) cuando...
+* Se desea evitar un enlace permanente entre la abstracción y su implementación. Esto puede ser debido a que la implementación debe ser seleccionada o cambiada en tiempo de ejecución.
+* Tanto las abstracciones como sus implementaciones deben ser extensibles por medio de subclases. En este caso, el patrón Bridge permite combinar abstracciones e implementaciones diferentes y extenderlas independientemente.
+* Cambios en la implementación de una abstracción no deben impactar en los clientes, es decir, su código no debe tener que ser recompilado.
+* Se desea compartir una implementación entre múltiples objetos (quizá usando contadores), y este hecho debe ser escondido a los clientes.
+
+**Usos típicos:**
+* *Desacoplar* interfaz e implementación.
+* Mejorar la *extensibilidad*.
+* Esconder los detalles de la implementación a los clientes.
+
+**Ejemplos:**
+* [Taller](https://github.com/peterm85/design-patterns/tree/master/src/bridge/examples/workshop)
+
+**Referencia:** [https://www.geeksforgeeks.org/bridge-design-pattern/](https://www.geeksforgeeks.org/bridge-design-pattern/)
