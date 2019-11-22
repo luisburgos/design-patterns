@@ -51,7 +51,7 @@ Forma en que las clases u objetos interaccionan y distribuyen funcionalidades.
 * [Template method](#template) [**C**]
 * [Iterator](#iterator) [**O**]
 * [Visitor](#visitor) [**O**]
-* [State] [**O**]
+* [State](#state) [**O**]
 * [Interpreter] [**C**]
 
 ## <a name="strategy">Strategy</a> [&#8593;](#lista-de-patrones)
@@ -439,3 +439,16 @@ Si hay demasiadas implementaciones de la interface visitor, se hace dificil exte
 * [Airport Security Control](https://github.com/peterm85/design-patterns/tree/master/src/visitor/examples/airportsecuritycontrol)
 * [Arithmetic](https://github.com/peterm85/design-patterns/tree/master/src/visitor/examples/arithmetic)
 
+
+## <a name="state">State</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Permite a un objeto alterar su comportamiento dependiendo de su estado interno.
+
+**Aplicación:** Usamos el patrón [State](https://github.com/peterm85/design-patterns/tree/master/src/state/examples/pattern) cuando ...
+* Un determinado objeto tiene diferentes estados y también distintas responsabilidades según el estado en que se encuentre en determinado instante.
+* Se desea simplificar casos en los que se tiene un complicado y extenso código de decisión que depende del estado del objeto.
+
+**Ejemplos:**
+* [Mobile Alerts](https://github.com/peterm85/design-patterns/tree/master/src/state/examples/mobilealerts)
+
+**Referencia:** [https://www.geeksforgeeks.org/state-design-pattern/](https://www.geeksforgeeks.org/state-design-pattern/)
