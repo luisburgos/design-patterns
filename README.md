@@ -444,7 +444,7 @@ Si hay demasiadas implementaciones de la interface visitor, se hace dificil exte
 
 **Propósito:** Permite a un objeto alterar su comportamiento dependiendo de su estado interno.
 
-**Aplicación:** Usamos el patrón [State](https://github.com/peterm85/design-patterns/tree/master/src/state/examples/pattern) cuando ...
+**Aplicación:** Usamos el patrón [State](https://github.com/peterm85/design-patterns/tree/master/src/state/pattern) cuando ...
 * Un determinado objeto tiene diferentes estados y también distintas responsabilidades según el estado en que se encuentre en determinado instante.
 * Se desea simplificar casos en los que se tiene un complicado y extenso código de decisión que depende del estado del objeto.
 
