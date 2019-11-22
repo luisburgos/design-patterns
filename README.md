@@ -48,7 +48,7 @@ Forma en que las clases u objetos interaccionan y distribuyen funcionalidades.
 * [Chain of Responsability](#chain) [**O**]
 * [Memento](#memento) [**O**]
 * [Mediator](#mediator) [**O**]
-* [Templete method] [**C**]
+* [Template method](#template) [**C**]
 * [Iterator] [**O**]
 * [Visitor] [**O**]
 * [State] [**O**]
@@ -387,3 +387,19 @@ La comunicación entre objetos es encapsulada con un objeto mediador. Los objeto
 * [Air Traffic Controller](https://github.com/peterm85/design-patterns/tree/master/src/mediator/examples/airtrafficcontroller)
 
 **Referencia:** [https://www.geeksforgeeks.org/mediator-design-pattern/](https://www.geeksforgeeks.org/mediator-design-pattern/)
+
+## <a name="template">Template Method</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Define el esqueleto de programa de un algoritmo en un método, llamado método de plantilla, el cual difiere algunos pasos a las subclases.
+
+Permite redefinir ciertos pasos seguros de un algoritmo sin cambiar la estructura del algoritmo.
+
+**Aplicación:** Usamos el patrón Template Method cuando ...
+* Se desea dejar que las subclases que se implementan (a través del método primordial) tengan un comportamiento que puede variar.
+* Evitar duplicación en el código: la estructura general de flujo de trabajo, está implementada una vez en el algoritmo de clase abstracta, y variaciones necesarias son implementadas en cada de las subclases.
+* Controlar en qué punto(s) la subclassing está permitida. En oposición a una sencilla sobrecarga polimórfica, donde el método de base sería enteramente reescrito, permitiendo un cambio radical en el flujo. Sólo los detalles específicos del flujo se pueden cambiar.
+
+**Ejemplos:**
+* [Order Managing](https://github.com/peterm85/design-patterns/tree/master/src/template/examples/ordermanaging)
+
+**Referencia:** [https://www.geeksforgeeks.org/template-method-design-pattern/](https://www.geeksforgeeks.org/template-method-design-pattern/)
