@@ -49,7 +49,7 @@ Forma en que las clases u objetos interaccionan y distribuyen funcionalidades.
 * [Memento](#memento) [**O**]
 * [Mediator](#mediator) [**O**]
 * [Template method](#template) [**C**]
-* [Iterator] [**O**]
+* [Iterator](#iterator) [**O**]
 * [Visitor] [**O**]
 * [State] [**O**]
 * [Interpreter] [**C**]
@@ -401,5 +401,21 @@ Permite redefinir ciertos pasos seguros de un algoritmo sin cambiar la estructur
 
 **Ejemplos:**
 * [Order Managing](https://github.com/peterm85/design-patterns/tree/master/src/template/examples/ordermanaging)
+
+**Referencia:** [https://www.geeksforgeeks.org/template-method-design-pattern/](https://www.geeksforgeeks.org/template-method-design-pattern/)
+
+## <a name="iterator">Iterator</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Define una interfaz que declara los métodos necesarios para acceder secuencialmente a un grupo de objetos de una colección.
+
+Algunos de los métodos que podemos definir en la interfaz Iterador son:
+
+Primero(), Siguiente(), HayMas() y ElementoActual().
+
+**Aplicación:** Usamos el patrón Iterator cuando ...
+* Se desea acceder a los elementos de un contenedor de objetos (por ejemplo, una lista) sin exponer su representación interna.
+
+**Ejemplos:**
+* [Vectors](https://github.com/peterm85/design-patterns/tree/master/src/iterator/examples/vectors)
 
 **Referencia:** [https://www.geeksforgeeks.org/template-method-design-pattern/](https://www.geeksforgeeks.org/template-method-design-pattern/)
