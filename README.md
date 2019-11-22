@@ -47,7 +47,7 @@ Forma en que las clases u objetos interaccionan y distribuyen funcionalidades.
 * [Strategy](#strategy) [**O**]
 * [Chain of Responsability](#chain) [**O**]
 * [Memento](#memento) [**O**]
-* [Mediator] [**O**]
+* [Mediator](#mediator) [**O**]
 * [Templete method] [**C**]
 * [Iterator] [**O**]
 * [Visitor] [**O**]
@@ -361,15 +361,29 @@ Cada elemento deberá tener referencia al siguiente.
 
 ## <a name="memento">Memento</a> [&#8593;](#lista-de-patrones)
 
-**Propósito:** Almacenar el estado de un objeto (o del sistema completo) en un momento dado de manera que se pueda restaurar en ese punto de manera sencilla.
+**Propósito:** Almacenar el estado de un objeto (o del sistema completo) en un momento dado, de manera que se pueda restaurar en ese punto de manera sencilla.
 
 Se mantiene almacenado el estado del objeto para un instante de tiempo en una clase independiente de aquella a la que pertenece el objeto (pero sin romper la encapsulación), de forma que ese recuerdo permita que el objeto sea modificado y pueda volver a su estado anterior.
 
 **Aplicación:** Usamos el patrón [Memento](https://github.com/peterm85/design-patterns/tree/master/src/memento/pattern) cuando...
-* Se quiere poder restaurar el sistema desde estados pasado.
+* Se quiere poder restaurar el sistema desde estados pasados.
 * Se desea facilitar el hacer y deshacer de determinadas operaciones, para lo que habrá que guardar los estados anteriores de los objetos sobre los que se opere (o bien recordar los cambios de forma incremental).
 
 **Ejemplos:**
 * [Time Machine](https://github.com/peterm85/design-patterns/tree/master/src/memento/examples/timemachine)
 
 **Referencia:** [https://www.geeksforgeeks.org/memento-design-pattern/](https://www.geeksforgeeks.org/memento-design-pattern/)
+
+## <a name="mediator">Mediator</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Define un objeto que encapsula cómo un conjunto de objetos interactúan, pudiendo alterar el comportamiento del programa en ejecución
+
+La comunicación entre objetos es encapsulada con un objeto mediador. Los objetos no se comunican de forma directa entre ellos, en lugar de ello se comunican mediante el mediador. Esto reduce las dependencias entre los objetos en comunicación, reduciendo entonces la Dependencia de código.
+
+**Aplicación:** Usamos el patrón [Mediator](https://github.com/peterm85/design-patterns/tree/master/src/memento/pattern) cuando ...
+* Se desea reducir la dependencia entre clases evitando que los objetos se relacionen entre ellos de forma explícita, y permitiendo variar cualquier interacción independientemente.
+
+**Ejemplos:**
+* [Air Traffic Controller](https://github.com/peterm85/design-patterns/tree/master/src/mediator/examples/airtrafficcontroller)
+
+**Referencia:** [https://www.geeksforgeeks.org/mediator-design-pattern/](https://www.geeksforgeeks.org/mediator-design-pattern/)
