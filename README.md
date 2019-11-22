@@ -46,7 +46,7 @@ Forma en que las clases u objetos interaccionan y distribuyen funcionalidades.
 * [Observer](#observer) [**O**]
 * [Strategy](#strategy) [**O**]
 * [Chain of Responsability](#chain) [**O**]
-* [Memento] [**O**]
+* [Memento](#memento) [**O**]
 * [Mediator] [**O**]
 * [Templete method] [**C**]
 * [Iterator] [**O**]
@@ -358,3 +358,18 @@ Cada elemento deberá tener referencia al siguiente.
 
 **Ejemplos:**
 * [Army](https://github.com/peterm85/design-patterns/tree/master/src/chain/examples/army)
+
+## <a name="memento">Memento</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Almacenar el estado de un objeto (o del sistema completo) en un momento dado de manera que se pueda restaurar en ese punto de manera sencilla.
+
+Se mantiene almacenado el estado del objeto para un instante de tiempo en una clase independiente de aquella a la que pertenece el objeto (pero sin romper la encapsulación), de forma que ese recuerdo permita que el objeto sea modificado y pueda volver a su estado anterior.
+
+**Aplicación:** Usamos el patrón [Memento](https://github.com/peterm85/design-patterns/tree/master/src/memento/pattern) cuando...
+* Se quiere poder restaurar el sistema desde estados pasado.
+* Se desea facilitar el hacer y deshacer de determinadas operaciones, para lo que habrá que guardar los estados anteriores de los objetos sobre los que se opere (o bien recordar los cambios de forma incremental).
+
+**Ejemplos:**
+* [Time Machine](https://github.com/peterm85/design-patterns/tree/master/src/memento/examples/timemachine)
+
+**Referencia:** [https://www.geeksforgeeks.org/memento-design-pattern/](https://www.geeksforgeeks.org/memento-design-pattern/)
