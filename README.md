@@ -380,7 +380,7 @@ Se mantiene almacenado el estado del objeto para un instante de tiempo en una cl
 
 La comunicación entre objetos es encapsulada con un objeto mediador. Los objetos no se comunican de forma directa entre ellos, en lugar de ello se comunican mediante el mediador. Esto reduce las dependencias entre los objetos en comunicación, reduciendo entonces la Dependencia de código.
 
-**Aplicación:** Usamos el patrón [Mediator](https://github.com/peterm85/design-patterns/tree/master/src/memento/pattern) cuando ...
+**Aplicación:** Usamos el patrón Mediator cuando ...
 * Se desea reducir la dependencia entre clases evitando que los objetos se relacionen entre ellos de forma explícita, y permitiendo variar cualquier interacción independientemente.
 
 **Ejemplos:**
