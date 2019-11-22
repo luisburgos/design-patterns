@@ -50,7 +50,7 @@ Forma en que las clases u objetos interaccionan y distribuyen funcionalidades.
 * [Mediator](#mediator) [**O**]
 * [Template method](#template) [**C**]
 * [Iterator](#iterator) [**O**]
-* [Visitor] [**O**]
+* [Visitor](#visitor) [**O**]
 * [State] [**O**]
 * [Interpreter] [**C**]
 
@@ -420,3 +420,22 @@ Primero(), Siguiente(), HayMas() y ElementoActual().
 * [Notifications](https://github.com/peterm85/design-patterns/tree/master/src/iterator/examples/notifications)
 
 **Referencia:** [https://www.geeksforgeeks.org/iterator-pattern/](https://www.geeksforgeeks.org/iterator-pattern/)
+
+## <a name="visitor">Visitor</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Separar el algoritmo de la estructura de un objeto.
+
+La idea básica es que se tiene un conjunto de clases elemento que conforman la *estructura* de un objeto. Cada una de estas clases elemento tiene un método aceptar (accept()) que recibe al objeto visitante (visitor) como argumento. El visitante es una interfaz que tiene un método visit diferente para cada clase elemento; por tanto habrá implementaciones de la interfaz visitor de la forma: visitorClase1, visitorClase2... visitorClaseN. El método accept de una clase elemento llama al método visit de su clase.
+
+Si hay demasiadas implementaciones de la interface visitor, se hace dificil extender.
+
+**Aplicación:** Usamos el patrón Visitor cuando ...
+* Se desea mover la lógica operacional desde los objetos a otra clase.
+* Se desea definir una operación sobre objetos de una jerarquía de clases sin modificar las clases sobre las que opera.
+* Se desea representar una operación que se realiza sobre los elementos que conforman la estructura de un objeto
+* Teniendo un buen número de instancias de un pequeño número de clases, se desea realizar alguna operación que involucra a todas o a la mayoría de ellas.
+
+**Ejemplos:**
+* [Airport Security Control](https://github.com/peterm85/design-patterns/tree/master/src/visitor/examples/airportsecuritycontrol)
+* [Arithmetic](https://github.com/peterm85/design-patterns/tree/master/src/visitor/examples/arithmetic)
+
