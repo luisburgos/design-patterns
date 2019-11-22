@@ -417,5 +417,6 @@ Primero(), Siguiente(), HayMas() y ElementoActual().
 
 **Ejemplos:**
 * [Vectors](https://github.com/peterm85/design-patterns/tree/master/src/iterator/examples/vectors)
+* [Notifications](https://github.com/peterm85/design-patterns/tree/master/src/iterator/examples/notifications)
 
-**Referencia:** [https://www.geeksforgeeks.org/template-method-design-pattern/](https://www.geeksforgeeks.org/template-method-design-pattern/)
+**Referencia:** [https://www.geeksforgeeks.org/iterator-pattern/](https://www.geeksforgeeks.org/iterator-pattern/)
