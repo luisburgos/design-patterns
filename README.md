@@ -10,49 +10,44 @@ La siguiente es una lista de patrones de diseño con descripciones breves y con 
 
 ## <a name="lista-de-patrones">Lista de Patrones de Diseño.</a>
 
-Ámbito:
-
-* [**C**] Clase 
-* [**O**] Objeto
-
 ### Patrones de Creación (Creational Patterns)
 
 Relativos al proceso de creación de un objeto.
 
-* [Abstract Factory](#abstract-factory) [**O**]
-* [Builder](#builder) [**O**]
-* [Factory o Factory Method](#factory) [**C**]
-* [Prototype](#prototype) [**O**]
-* [Singleton](#singleton) [**O**]
-* [Object Pool](#objectpool) [**O**]
+* [Abstract Factory](#abstract-factory)
+* [Builder](#builder)
+* [Factory o Factory Method](#factory)
+* [Prototype](#prototype)
+* [Singleton](#singleton)
+* [Object Pool](#objectpool)
 
 ### Patrones de Estructura (Structural Patterns)
 
 Composición de clases u objetos.
 
-* [Adapter](#adapter) [**O**] [**C**]
-* [Composite](#composite) [**O**]
-* [Decorator](#decorator) [**O**]
-* [Facade](#facade) [**O**]
-* [Proxy](#proxy) [**O**]
-* [Bridge](#bridge) [**O**]
-* [Flyweight](#flyweigh) [**O**]
+* [Adapter](#adapter)
+* [Composite](#composite)
+* [Decorator](#decorator)
+* [Facade](#facade)
+* [Proxy](#proxy)
+* [Bridge](#bridge)
+* [Flyweight](#flyweigh)
 
 ### Patrones de Comportamiento (Behavioral Patterns)
 
 Forma en que las clases u objetos interaccionan y distribuyen funcionalidades.
 
-* [Command](#command) [**O**]
-* [Observer](#observer) [**O**]
-* [Strategy](#strategy) [**O**]
-* [Chain of Responsability](#chain) [**O**]
-* [Memento](#memento) [**O**]
-* [Mediator](#mediator) [**O**]
-* [Template method](#template) [**C**]
-* [Iterator](#iterator) [**O**]
-* [Visitor](#visitor) [**O**]
-* [State](#state) [**O**]
-* [Interpreter](#interpreter) [**C**]
+* [Command](#command)
+* [Observer](#observer)
+* [Strategy](#strategy)
+* [Chain of Responsability](#chain)
+* [Memento](#memento)
+* [Mediator](#mediator)
+* [Template method](#template)
+* [Iterator](#iterator)
+* [Visitor](#visitor)
+* [State](#state)
+* [Interpreter](#interpreter)
 
 ## <a name="strategy">Strategy</a> [&#8593;](#lista-de-patrones)
 
