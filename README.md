@@ -52,7 +52,7 @@ Forma en que las clases u objetos interaccionan y distribuyen funcionalidades.
 * [Iterator](#iterator) [**O**]
 * [Visitor](#visitor) [**O**]
 * [State](#state) [**O**]
-* [Interpreter] [**C**]
+* [Interpreter](#interpreter) [**C**]
 
 ## <a name="strategy">Strategy</a> [&#8593;](#lista-de-patrones)
 
@@ -439,7 +439,6 @@ Si hay demasiadas implementaciones de la interface visitor, se hace dificil exte
 * [Airport Security Control](https://github.com/peterm85/design-patterns/tree/master/src/visitor/examples/airportsecuritycontrol)
 * [Arithmetic](https://github.com/peterm85/design-patterns/tree/master/src/visitor/examples/arithmetic)
 
-
 ## <a name="state">State</a> [&#8593;](#lista-de-patrones)
 
 **Propósito:** Permite a un objeto alterar su comportamiento dependiendo de su estado interno.
@@ -452,3 +451,16 @@ Si hay demasiadas implementaciones de la interface visitor, se hace dificil exte
 * [Mobile Alerts](https://github.com/peterm85/design-patterns/tree/master/src/state/examples/mobilealerts)
 
 **Referencia:** [https://www.geeksforgeeks.org/state-design-pattern/](https://www.geeksforgeeks.org/state-design-pattern/)
+
+## <a name="interpreter">Interpreter</a> [&#8593;](#lista-de-patrones)
+
+**Propósito:** Define una representación para su gramática junto con un intérprete del lenguaje.
+
+**Aplicación:** Usamos el patrón Interpreter cuando ...
+* Se desea representar expresiones regulares que representen cadenas a buscar dentro de otras cadenas..
+* Para definir un lenguaje que permita representar las distintas instancias de una familia de problemas.
+
+**Ejemplos:**
+* [SQL](https://github.com/peterm85/design-patterns/tree/master/src/interpreter/examples/sql)
+
+**Referencia:** [https://www.baeldung.com/java-interpreter-pattern](https://www.baeldung.com/java-interpreter-pattern)
